@@ -11,7 +11,7 @@ iawubdihawbdu
 
 ## The creator(s) of WeewooCAD
 
-### Their Names
+### Their Tags
 1. Mee
 2. No one yet
 3. I feel so lonely
