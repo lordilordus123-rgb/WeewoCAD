@@ -12,7 +12,7 @@ iawubdihawbdu
 ## The creator(s) of WeewooCAD
 
 ### Their Tags
-1. Mee
+1. Lordi
 2. No one yet
 3. I feel so lonely
 
