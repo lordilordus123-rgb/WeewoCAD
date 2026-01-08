@@ -9,5 +9,5 @@ fkjnweijfn
 ### WeewooCAD: get it running
 iawubdihawbdu
 
-## The Editor of WeewooCAD
+## The creator(s) of WeewooCAD
 
