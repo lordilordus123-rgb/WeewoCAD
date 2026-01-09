@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WeewoCAD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Frontend/stylenew.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">WeewoCAD</h1>
+      <p class="tagline">Moderne Frontend-Präsentation</p>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Input Section -->
+    <section class="card">
+      <h2>Interaktive Demo</h2>
+      <label id="myLabel" class="label">Gebe einen Text ein:</label>
+      <div class="input-group">
+        <input id="myInput" type="text" placeholder="Hier eingeben..." class="input">
+        <button id="myButton" class="btn">Abschicken</button>
+      </div>
+      <p id="msg" class="message"></p>
+    </section>
+
+    <!-- Bilder Section -->
+    <section class="card">
+      <h2>Bildergalerie</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="WeewooCAD_Logo.jpg" alt="WeewoCAD Logo" class="responsive-img">
+          <p>Lokales Bild</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200.png?text=Placeholder+1" alt="Placeholder 1" class="responsive-img">
+          <p>Externes Bild</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/300x200.png?text=Placeholder+2" alt="Placeholder 2" class="responsive-img">
+          <p>Noch ein Bild</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Font Demo Section -->
+    <section class="card">
+      <h2>Schriftvarianten</h2>
+      <h3 class="font-regular">Standard Schrift (Poppins)</h3>
+      <h3 class="font-fancy">Handschriftlich (Pacifico)</h3>
+      <p class="font-highlight">Fette Schrift für Hervorhebungen</p>
+    </section>
+
+    <!-- Info Section -->
+    <section class="card info-section">
+      <h2>Über dieses Projekt</h2>
+      <p>WeewoCAD ist ein modernes Frontend-Projekt mit zeitgemäßem Design, responsivem Layout und interaktiven Elementen.</p>
+      <ul>
+        <li>✨ Modernes Design</li>
+        <li>📱 Responsive Layout</li>
+        <li>🎨 Schöne Farben &amp; Typographie</li>
+        <li>⚡ Schnell &amp; benutzerfreundlich</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 WeewoCAD Project · Built with ❤️</p>
+  </footer>
+
+  <script src="Backend/script.js"></script>
+</body>
+</html>

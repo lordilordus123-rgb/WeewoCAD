@@ -36,6 +36,17 @@ body {
   opacity: 0.9;
 }
 
+/* Container & Layout */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main.container {
+  padding: 3rem 2rem;
+}
+
 /* Footer */
 .footer {
   background: rgba(0, 0, 0, 0.3);
