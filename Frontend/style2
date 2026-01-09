@@ -1,8 +1,0 @@
-body { font-family: Arial, Helvetica, sans-serif; padding: 20px; background: #9058ff; }
-.container { max-width: 480px; margin: 0 auto; background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
-label { display: block; margin-bottom: 8px; font-weight: 600; }
-input { width: 100%; padding: 8px; margin-bottom: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-button { padding: 8px 12px; border: none; background: #2563eb; color: #fff; border-radius: 4px; cursor: pointer; }
-button:hover { background: #1e4db7; }
-hr { margin: 16px 0; border: none; border-top: 1px solid #e2e8f0; }
-#msg { margin-top: 8px; color: #064e3b; }
