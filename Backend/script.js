@@ -7,6 +7,8 @@
 const inputField = document.getElementById('myInput');
 const submitBtn = document.getElementById('myButton');
 const messageDisplay = document.getElementById('msg');
+const emailField = document.getElementById('emailInput');
+const passwordField = document.getElementById('passwordInput');
 const label = document.getElementById('myLabel');
 
 // ============================================================
@@ -41,6 +43,7 @@ inputField.addEventListener('blur', () => {
  */
 function handleSubmit() {
   const inputValue = inputField.value.trim();
+  const emailValue = emailField ? emailField.value.trim() : '';
 
   // Clear previous message
   messageDisplay.textContent = '';
@@ -53,14 +56,24 @@ function handleSubmit() {
     return;
   }
 
-  if (inputValue.length < 3) {
-    showMessage('⚠️ Der Text muss mindestens 3 Zeichen lang sein.', 'warning');
+  // Simple email validation if field exists
+  if (emailValue) {
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRe.test(emailValue)) {
+      showMessage('❌ Bitte geben Sie eine gültige E‑Mail-Adresse ein.', 'error');
+      emailField.focus();
+      return;
+    }
+  }
+
+  if (inputValue.length < 2) {
+    showMessage('⚠️ Der Text muss mindestens 2 Zeichen lang sein.', 'warning');
     return;
   }
 
   // Success message
   const timestamp = new Date().toLocaleTimeString('de-DE');
-  const message = `✅ Text eingegeben: "${inputValue}" (${timestamp})`;
+  const message = `✅ Eingabe: "${inputValue}" ${emailValue ? '| E‑Mail: ' + emailValue : ''} (${timestamp})`;
   showMessage(message, 'success');
 
   // Additional processing
@@ -132,6 +145,11 @@ function processInput(input) {
 
   // Log to console (for development)
   console.log('Input processed:', debugInfo);
+
+  // If email was provided, log it too
+  if (emailField && emailField.value.trim()) {
+    console.log('Email provided:', emailField.value.trim());
+  }
 
   // Example: Additional message if long text
   if (charCount > 50) {
