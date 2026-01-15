@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WeewooCAD - Registrieren</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Frontend/login-style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">WeewooCAD</h1>
+    </div>
+  </header>
+
+   <main class="container">
+     <section class="card">
+       <h2>Registrieren</h2>
+       <div class="input-group">
+         <input id="regUsernameInput" name="username" type="text" placeholder="Benutzername" class="input">
+         <input id="regEmailInput" name="email" type="email" placeholder="E‑Mail" class="input">
+         <input id="regPasswordInput" name="password" type="password" placeholder="Passwort" class="input">
+         <button id="regButton" class="btn">Registrieren</button>
+       </div>
+       <p id="regMsg" class="message"></p>
+       <p style="margin-top:8px;color:rgba(255,255,255,0.85);">Schon registriert? <a href="WeewooCAD-login.html" style="color:#fff;text-decoration:underline">Login</a></p>
+     </section>
+   </main>
+
+  <script src="Backend/register-script.js"></script>
+</body>
+</html>

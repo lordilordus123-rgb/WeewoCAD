@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": 1768494803739,
+      "username": "Lordi",
+      "email": "lordi.lordus123@gmail.com",
+      "passwordHash": "$2b$10$1D5CLD82ki1Yw8nUTLlC2Op5OaPzMsiNULjEu8A5YazFAnomb10bC",
+      "confirmed": true,
+      "verificationToken": "a3471c2e1e0c7cb439c87785bb39157764fc3a69a95a9cf8",
+      "tokenExpires": 1768581203875
+    }
+  ]
+}

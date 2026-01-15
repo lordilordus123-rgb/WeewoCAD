@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 2rem;
   align-items: center;
@@ -47,8 +47,9 @@ main.container {
   padding: 3rem 2rem;
   align-items: center;
   display: grid;
-  place-items: center; /* horizontal + vertikal */
+  place-items: center;
   height: 200px;
+  min-width: none;
 }
 
 .btn {
@@ -72,7 +73,6 @@ main.container {
 
 .input {
   width: 100%;
-  max-width: 420px;
   padding: 0.75rem 1rem;
   border: 2px solid #ddd;
   font-family: 'Indie Flower', cursive;
@@ -116,8 +116,10 @@ main.container {
   background: rgba(0, 0, 0, 0.3);
   color: white;
   text-align: center;
+  text-align: bottom;
   padding: 2rem;
   margin-top: 3rem;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   font-family: 'Pacifico', cursive;
+  width: 100%;
 }
